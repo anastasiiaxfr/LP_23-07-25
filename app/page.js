@@ -1,8 +1,15 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+import Benefits from "@/components/Sections/Benefits";
+import Apps from "@/components/Sections/Apps";
+import Roadmap from "@/components/Sections/Roadmap";
+import Comments from "@/components/Sections/Comments";
 
 export default function Home() {
   return (
-   <div className="container">main</div>
+    <>
+        <Benefits />
+        <Apps />
+        <Comments/>
+        <Roadmap />
+    </>
   );
 }

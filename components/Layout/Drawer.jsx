@@ -20,11 +20,11 @@ function Drawer() {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant="outline" size="icon">
+        <Button variant="outline" size="icon" className="btn-secondary">
           <MenuIcon className="w-5 h-5" />
         </Button>
       </SheetTrigger>
-      <SheetContent>
+      <SheetContent className="drawer">
         <SheetHeader>
           <SheetTitle>
             <Logo />
@@ -34,7 +34,9 @@ function Drawer() {
               <SheetClose asChild key={index}>
                 <a
                   href={item.url}
-                  className="block text-sm text-foreground hover:underline cursor-pointer"
+                  className="block text-sm 
+                  text-white
+                  hover:underline cursor-pointer"
                 >
                   {item.title}
                 </a>
@@ -44,7 +46,7 @@ function Drawer() {
         </SheetHeader>
         <SheetFooter>
           <SheetClose asChild>
-            <Button variant="secondary">Sign In</Button>
+            <Button className="btn-secondary">Sign In</Button>
           </SheetClose>
         </SheetFooter>
       </SheetContent>

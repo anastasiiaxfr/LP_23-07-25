@@ -1,13 +1,74 @@
 @layer components {
     header {
-        @apply bg-green-400 py-4;
+        @apply py-4;
     }
 
     .header .container {
         @apply flex flex-nowrap items-center justify-between gap-2;
     }
 
-    .menu a {
-        @apply cursor-pointer px-4 py-2 hover:bg-gray-100 rounded-sm font-medium;
+    .hero_wrap {
+        background: url('../img/bg/bg0.svg') no-repeat 50%/cover;
+        @apply text-white bg-c1;
     }
+
+    .hero {
+        @apply py-15 lg:py-20;
+    }
+
+    .hero .row {
+        @apply grid grid-cols-1 md:grid-cols-[2fr_1fr] lg:grid-cols-2 items-center gap-10 text-center md:text-left justify-center md:justify-start;
+    }
+
+    .menu {
+        @apply ml-auto;
+    }
+    .menu a {
+        @apply cursor-pointer px-4 py-2 hover:underline rounded-sm font-medium;
+    }
+
+    .drawer {
+        @apply !bg-c1 text-white !border-0;
+    }
+
+    .footer {
+        @apply bg-primary/10 text-gray-500;
+    }
+
+    .footer_top {
+        @apply py-10
+    }
+
+    .footer_top .container {
+        @apply flex flex-wrap gap-10 justify-between items-start;
+    }
+
+    .footer_btm {
+        @apply py-4;
+    }
+
+    .footer_btm .container {
+        @apply flex flex-wrap items-center gap-5 justify-between;
+    }
+
+    .footer_menu {
+        @apply grid grid-cols-[auto_auto] gap-y-5 gap-x-10;
+    }
+
+    .footer_menu div {
+        @apply grid gap-2;
+    }
+
+    .footer_menu b {
+        @apply text-black;
+    }
+
+    .footer_menu a {
+        @apply hover:underline;
+    }
+
+    .divider {
+        @apply opacity-20;
+    }
+
 }

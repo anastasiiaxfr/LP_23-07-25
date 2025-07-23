@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 
 import Logo from "./Logo";
 import NavMenu from "./NavMenu";
-import Drawer from "./Draer";
+import Drawer from "./Drawer";
 
 function Header() {
   return (
@@ -11,10 +11,8 @@ function Header() {
         <Logo />
         <NavMenu />
         <div className="flex gap-2">
-          <Button variant="secondary" className="btn">
-            Sign In
-          </Button>
-          <div className="sm:hidden">
+          <Button className="btn-secondary">Sign In</Button>
+          <div className="md:hidden">
             <Drawer />
           </div>
         </div>

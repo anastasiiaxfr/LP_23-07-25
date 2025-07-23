@@ -9,7 +9,7 @@ import { menu } from "./contstant";
 
 function NavMenu() {
   return (
-    <NavigationMenu className="menu hidden sm:flex">
+    <NavigationMenu className="menu hidden md:flex">
       <NavigationMenuList>
         {menu.map((i, ind) => (
           <NavigationMenuItem key={ind}>

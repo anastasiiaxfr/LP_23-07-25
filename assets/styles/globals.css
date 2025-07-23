@@ -5,15 +5,13 @@
 
 @import "./_default.css"; 
 @import "./_nav.css"; 
-
-
+@import "./_btns.css"; 
+@import "./_text.css"; 
+@import "./_styles.css";
 
 @layer base {
   * {
     @apply box-border;
-  }
-  body {
-    @apply text-foreground bg-yellow-50;
   }
 }
 
